@@ -10,5 +10,17 @@
         "episode": "RUBENS BARRICHELLO - Flow #339",
         "videoId": "4KDGTdiOV4I",
         "categories": ["esporte", "corrida"]
+    },
+    {
+        "podcastName": "flow",
+        "episode": "João - Flow #339",
+        "videoId": "4435613",
+        "categories": ["esporte", "gastronomia"]
+    },
+    {
+        "podcastName": "Venus",
+        "episode": "João - Venus #123",
+        "videoId": "12345",
+        "categories": ["saúde", "corrida"]
     }
 ]
