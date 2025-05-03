@@ -3,13 +3,17 @@ import { getFilterEpisodes, getListEpisodes } from './controllers/podcasts-contr
 
 const server = http.createServer(
     async (req: http.IncomingMessage, res: http.ServerResponse) => {
+
+        // query String
+        const [baseUrl, queryString] = req.url?.split("?") ?? ["", ""];
+
         // listar podcasts
-        if(req.method === "GET" && req.url === "/api/list"){
+        if(req.method === "GET" && baseUrl === "/api/list"){
             await getListEpisodes(req, res);
         }
 
         // listar podcasts filtrados
-        if(req.method === "GET" && req.url === "/api/episode"){
+        if(req.method === "GET" && baseUrl === "/api/episode"){
             await getFilterEpisodes(req, res);
         }
 

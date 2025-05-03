@@ -21,7 +21,10 @@ export const getFilterEpisodes = async(
     req: IncomingMessage,
     res: ServerResponse
 ) => {
-    const content = await serviceFilterEpisodes("flow");
+
+    const queryString = req.url?.split("?p=")[1] || "";
+
+    const content = await serviceFilterEpisodes(queryString);
 
     res.writeHead(200, {'Content-Type': "application/json"});
 
