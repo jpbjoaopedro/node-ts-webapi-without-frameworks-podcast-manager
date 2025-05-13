@@ -2,7 +2,6 @@ import {IncomingMessage, ServerResponse} from "http"
 import { serviceListEpisodes } from '../services/list-episodes-service'
 import { serviceFilterEpisodes } from "../services/filter-episodes-service";
 
-import { StatusCode } from "../utils/status-code";
 import { ContentType } from "../utils/content-type";
 import { PodcastTranferModel } from "../models/podcast-transfer-model";
 
