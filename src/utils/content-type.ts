@@ -1,0 +1,14 @@
+export enum ContentType {
+    JSON = "application/json",
+    HTML = "text/html",
+    XML = "application/xml",
+    TEXT = "text/plain",
+    FORM_URLENCODED = "application/x-www-form-urlencoded",
+    MULTIPART_FORM_DATA = "multipart/form-data",
+    JAVASCRIPT = "application/javascript",
+    CSS = "text/css",
+    PNG = "image/png",
+    JPEG = "image/jpeg",
+    GIF = "image/gif",
+    WEBP = "image/webp"
+}
